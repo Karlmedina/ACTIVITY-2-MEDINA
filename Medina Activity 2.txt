@@ -1,0 +1,96 @@
+// Activity 2 : This program will generate the day , month and year
+
+#include <iostream>
+#include <conio.h>
+using namespace std;
+
+int main()
+{
+    int D, M, Y;
+    cout<<"NUMBER   MONTH      DAYS         NUMBER   MONTH      DAYS" <<endl;
+    cout<<"[1]      January   =  31 \t"     "[7]      July      =  31"<<endl;
+    cout<<"[2]      February  =  29 \t"     "[8]      August    =  31"<<endl;
+    cout<<"[3]      March     =  31 \t"     "[9]      September =  30"<<endl;
+    cout<<"[4]      April     =  30 \t"     "[10]     October   =  31"<<endl;
+    cout<<"[5]      May       =  31 \t"     "[11]     Novermber =  30"<<endl;
+    cout<<"[6]      June      =  30 \t"     "[12]     December  =  31"<<endl;
+    cout<<"----------------------------------------------------------"<<endl;
+    
+    do 
+    {
+    cout<<"Enter Day :" <<endl;
+    cin>> D;
+    cout<<"Enter the Number of Month :" <<endl;
+    cin>> M;
+    cout<<"Enter Year :" <<endl;
+    cin>> Y;
+    }
+    
+    
+    while(0);
+    {
+    if (D<=0 || D>=32){
+    cout<<"Invalid input, enter the number of day again: " <<endl;
+    cin>>D;    
+    }
+    if (M<=0 || M>=13){
+    cout<<"Invalid input, enter the number of month again: " <<endl;
+    cin>>M;
+    }
+    
+
+    if (M == 1 && D <= 31 && D >=1)
+    {
+		cout << "January " << D << ", " << Y;
+	}
+	if (M == 2 && D <= 29 && D >=1)
+	{
+		cout << "February " << D << ", " << Y;
+	
+	}
+	if (M == 3 && D <= 31 && D >=1)
+	{
+		cout << "March " << D << ", " << Y;
+	}
+	if (M == 4 && D <= 30 && D >=1)
+	{
+		cout << "April " << D << ", " << Y;
+	}
+	if (M == 5 && D <= 31 && D >=1)
+	{
+	    cout << "May " << D << ", " << Y;
+	}
+	if (M == 6 && D <= 30 && D >=1)
+	{
+	    cout << "June " << D << ", " << Y;
+	}
+	if (M == 7 && D <= 31 && D >=1)
+	{
+	    cout << "July " << D << ", " << Y;
+	}
+	if (M == 8 && D <= 31 && D >=1)
+	{
+	    cout << "August " << D << ", " << Y;
+	}
+	if (M == 9 && D <= 30 && D >=1)
+	{
+	    cout << "September " << D << ", " << Y;
+	}
+	if (M == 10 && D <= 31 && D >=1)
+	{
+	    cout << "October " << D << ", " << Y;
+	}
+	if (M == 11 && D <= 30 && D >=1)
+	{
+	    cout << "November " << D << ", " << Y;	
+	}
+	if (M == 12 && D <= 31 && D >=1)
+	{
+	    cout << "December " << D << ", " << Y;	
+	}
+
+
+}
+ _getch();  
+ return 0;
+}
